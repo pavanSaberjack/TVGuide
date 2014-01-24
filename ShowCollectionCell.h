@@ -10,4 +10,7 @@
 
 @interface ShowCollectionCell : UICollectionViewCell
 @property (nonatomic, weak) UILabel *showLabel;
+
+- (void)configureWithData:(id)data;
+- (void)updateTheContentsForRect:(CGRect)parentVisibleRect;
 @end

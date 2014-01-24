@@ -5,32 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>35B4F936-29A8-4A5A-A9F4-42C82600FC46</string>
+	<string>3498AA0C-77F0-449B-A454-FA38273BD281</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TVGuideDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2318D3C7-A830-4413-8C0A-936AADD68968</key>
+		<key>9719D826-2BCC-4D40-A500-23C3F4E2AF83</key>
 		<string>http://opengles-book-samples.googlecode.com/svn/trunk</string>
+		<key>98554412-E206-4326-B65C-1FCB8EB87A22</key>
+		<string>https://github.com/pavanSaberjack/TVGuide.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>zing_files/TVGuideDemo/TVGuideDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2318D3C7-A830-4413-8C0A-936AADD68968</key>
+		<key>9719D826-2BCC-4D40-A500-23C3F4E2AF83</key>
 		<string>../../../..</string>
+		<key>98554412-E206-4326-B65C-1FCB8EB87A22</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>2318D3C7-A830-4413-8C0A-936AADD68968</key>
+		<key>9719D826-2BCC-4D40-A500-23C3F4E2AF83</key>
 		<string>http://opengles-book-samples.googlecode.com/svn</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://opengles-book-samples.googlecode.com/svn/trunk/zing_files/TVGuideDemo/TVGuideDemo.xcodeproj</string>
+	<string>https://github.com/pavanSaberjack/TVGuide.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2318D3C7-A830-4413-8C0A-936AADD68968</string>
+	<string>9719D826-2BCC-4D40-A500-23C3F4E2AF83</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -43,9 +47,17 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2318D3C7-A830-4413-8C0A-936AADD68968</string>
+			<string>9719D826-2BCC-4D40-A500-23C3F4E2AF83</string>
 			<key>IDESourceControlWCCName</key>
 			<string>github</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>98554412-E206-4326-B65C-1FCB8EB87A22</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TVGuideDemo</string>
 		</dict>
 	</array>
 </dict>

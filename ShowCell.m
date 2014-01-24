@@ -92,13 +92,24 @@
     
     ShowCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor blueColor]];
-    
+    [cell configureWithData:nil];
     return cell;
 }
 
 #pragma mark - UIScrollViewDelegate methods
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
+    CGRect scrollVisibleRect = CGRectZero;
+    scrollVisibleRect.origin = scrollView.contentOffset;
+    scrollVisibleRect.size = scrollView.frame.size;
+    
+    // get the visible cells for collection cells
+    NSArray *visibleShows = [self.collectionView visibleCells];
+    for (ShowCollectionCell *cell in visibleShows) {
+        [cell updateTheContentsForRect:scrollVisibleRect];
+    }
+    
     if ([self.delegate respondsToSelector:@selector(showCell:collectionViewDidScroll:)]) {
         [self.delegate showCell:self collectionViewDidScroll:scrollView];
     }

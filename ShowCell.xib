@@ -26,7 +26,7 @@
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="YVB-zq-vBn" id="aOM-Fd-C6y"/>
-                            <outlet property="delegate" destination="YVB-zq-vBn" id="y8N-Dr-OoX"/>
+                            <outlet property="delegate" destination="-1" id="bjJ-mr-Pib"/>
                         </connections>
                     </collectionView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJo-VM-ivT">
