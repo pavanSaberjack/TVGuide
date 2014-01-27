@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7D8BA4189636E3009670AD /* CustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D8BA3189636E3009670AD /* CustomCollectionView.m */; };
 		8BDA72881892122900612C5D /* ShowCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA72871892122900612C5D /* ShowCollectionCell.m */; };
 		8BE11CD21890BE9D00BBE7B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE11CD11890BE9D00BBE7B1 /* Foundation.framework */; };
 		8BE11CD41890BE9D00BBE7B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE11CD31890BE9D00BBE7B1 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B7D8BA2189636E3009670AD /* CustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionView.h; sourceTree = "<group>"; };
+		8B7D8BA3189636E3009670AD /* CustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionView.m; sourceTree = "<group>"; };
 		8BDA72861892122900612C5D /* ShowCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCollectionCell.h; sourceTree = "<group>"; };
 		8BDA72871892122900612C5D /* ShowCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCollectionCell.m; sourceTree = "<group>"; };
 		8BE11CCE1890BE9D00BBE7B1 /* TVGuideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVGuideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +182,8 @@
 				8BE11D141890E1E500BBE7B1 /* CollectionFlowLayout.m */,
 				8BDA72861892122900612C5D /* ShowCollectionCell.h */,
 				8BDA72871892122900612C5D /* ShowCollectionCell.m */,
+				8B7D8BA2189636E3009670AD /* CustomCollectionView.h */,
+				8B7D8BA3189636E3009670AD /* CustomCollectionView.m */,
 			);
 			name = Guide;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				8BDA72881892122900612C5D /* ShowCollectionCell.m in Sources */,
 				8BE11CDE1890BE9E00BBE7B1 /* main.m in Sources */,
 				8BE11D081890BF1900BBE7B1 /* TableContainerView.m in Sources */,
+				8B7D8BA4189636E3009670AD /* CustomCollectionView.m in Sources */,
 				8BE11CE81890BE9E00BBE7B1 /* PIViewController.m in Sources */,
 				8BE11D0C1890C4FC00BBE7B1 /* ShowCell.m in Sources */,
 				8BE11D151890E1E500BBE7B1 /* CollectionFlowLayout.m in Sources */,

@@ -12,6 +12,9 @@
 //Custom Cell
 #import "ShowCollectionCell.h"
 
+// Custom collectin view
+#import "CustomCollectionView.h"
+
 @interface ShowCell() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate>
 {
     CollectionFlowLayout* _flowLayout;
@@ -42,6 +45,7 @@
 
 - (void)awakeFromNib
 {
+    [_collectionView setDelegate:self];
     [_collectionView registerClass:[ShowCollectionCell class] forCellWithReuseIdentifier:@"CollectionCell"];
 }
 
@@ -104,11 +108,27 @@
     scrollVisibleRect.origin = scrollView.contentOffset;
     scrollVisibleRect.size = scrollView.frame.size;
     
-    // get the visible cells for collection cells
     NSArray *visibleShows = [self.collectionView visibleCells];
-    for (ShowCollectionCell *cell in visibleShows) {
-        [cell updateTheContentsForRect:scrollVisibleRect];
+    
+    for (ShowCollectionCell *cell in visibleShows)
+    {
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        
+        CGRect cellRect =  cell.frame;//[self.collectionView rectForRowAtIndexPath:indexPath];
+        cellRect = [self.collectionView convertRect:cellRect toView:self.collectionView.superview];
+        BOOL completelyVisible = CGRectContainsRect(self.collectionView.frame, cellRect);
+        
+        NSLog(@"asdfsdfsdf");
     }
+    
+    
+    
+    
+//    // get the visible cells for collection cells
+//    NSArray *visibleShows = [self.collectionView visibleCells];
+//    for (ShowCollectionCell *cell in visibleShows) {
+//        [cell updateTheContentsForRect:scrollVisibleRect];
+//    }
     
     if ([self.delegate respondsToSelector:@selector(showCell:collectionViewDidScroll:)]) {
         [self.delegate showCell:self collectionViewDidScroll:scrollView];

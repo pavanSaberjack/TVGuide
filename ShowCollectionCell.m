@@ -28,14 +28,12 @@ const CGFloat version;
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)layoutSubviews
 {
-    // Drawing code
+    [super layoutSubviews];
+    
+    [self.showLabel setFrame:self.bounds];
 }
-*/
 
 #pragma mark - Public methods
 - (void)configureWithData:(id)data
@@ -53,19 +51,19 @@ const CGFloat version;
     if (!CGRectEqualToRect(frame, CGRectNull))
     {
         // get the exact origin for label
-        CGFloat minWidth = [self getMinimumWidthOfText];
+//        CGFloat minWidth = [self getMinimumWidthOfText];
         
-        if (frame.size.width > minWidth) {
+//        if (frame.size.width > minWidth) {
             CGFloat x = frame.origin.x - self.frame.origin.x;
             CGRect newFrame = frame;
             newFrame.origin.x = x;
             
             [self.showLabel setFrame:newFrame];
-        }
-        else
-        {
-            
-        }
+//        }
+//        else
+//        {
+//            
+//        }
     }
 }
 
@@ -77,11 +75,6 @@ const CGFloat version;
         CGSize labelStr = [str sizeWithFont:self.showLabel.font constrainedToSize:self.showLabel.frame.size lineBreakMode:NSLineBreakByCharWrapping];
         
         self.textWidth = labelStr.width;
-        
-//        [self.showLabel setFrame:CGRectMake(self.showLabel.frame.origin.x,
-//                                            self.showLabel.frame.origin.y,
-//                                            labelStr.width,
-//                                            self.showLabel.frame.size.height)];
     }
     else
     {
@@ -95,11 +88,10 @@ const CGFloat version;
         CGRect rect = [string boundingRectWithSize:self.showLabel.frame.size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) context:nil];
         
         self.textWidth = rect.size.width;
-        
-//        [self.showLabel setFrame:CGRectMake(self.showLabel.frame.origin.x,
-//                                            self.showLabel.frame.origin.y,
-//                                            rect.size.width,
-//                                            self.showLabel.frame.size.height)];
+    }
+    
+    if (self.textWidth > self.frame.size.width) {
+        self.textWidth = self.frame.size.width;
     }
 }
 
@@ -114,6 +106,7 @@ const CGFloat version;
     [self addSubview:({
         UILabel *showLabel = [[UILabel alloc] initWithFrame:self.bounds];
         [showLabel setText:@""];
+        [showLabel setBackgroundColor:[UIColor greenColor]];
         self.showLabel = showLabel;
         showLabel;
     })];

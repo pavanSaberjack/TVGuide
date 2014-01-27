@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CustomCollectionView;
 @protocol ShowCellDelegate;
 @interface ShowCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, weak) IBOutlet CustomCollectionView *collectionView;
 @property (nonatomic, weak) id<ShowCellDelegate>delegate;
 
 - (void)addScrollingDelegates;
