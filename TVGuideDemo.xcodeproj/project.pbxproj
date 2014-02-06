@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B627C9518A095FC00347A30 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B627C9418A095FC00347A30 /* CustomLayout.m */; };
+		8B627C9818A0AD3500347A30 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B627C9718A0AD3500347A30 /* CustomCell.m */; };
+		8B627C9B18A0D7C000347A30 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B627C9A18A0D7C000347A30 /* CustomTableView.m */; };
 		8B7D8BA4189636E3009670AD /* CustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D8BA3189636E3009670AD /* CustomCollectionView.m */; };
 		8BDA72881892122900612C5D /* ShowCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA72871892122900612C5D /* ShowCollectionCell.m */; };
 		8BE11CD21890BE9D00BBE7B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE11CD11890BE9D00BBE7B1 /* Foundation.framework */; };
@@ -27,6 +30,8 @@
 		8BE11D0C1890C4FC00BBE7B1 /* ShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE11D0B1890C4FC00BBE7B1 /* ShowCell.m */; };
 		8BE11D0E1890C58D00BBE7B1 /* ShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE11D0D1890C58D00BBE7B1 /* ShowCell.xib */; };
 		8BE11D151890E1E500BBE7B1 /* CollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE11D141890E1E500BBE7B1 /* CollectionFlowLayout.m */; };
+		8BFB52B6189FC069004696E2 /* PickAShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB52B4189FC069004696E2 /* PickAShowViewController.m */; };
+		8BFB52B7189FC069004696E2 /* PickAShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFB52B5189FC069004696E2 /* PickAShowViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B627C9318A095FC00347A30 /* CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		8B627C9418A095FC00347A30 /* CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
+		8B627C9618A0AD3500347A30 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		8B627C9718A0AD3500347A30 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		8B627C9918A0D7C000347A30 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		8B627C9A18A0D7C000347A30 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
 		8B7D8BA2189636E3009670AD /* CustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionView.h; sourceTree = "<group>"; };
 		8B7D8BA3189636E3009670AD /* CustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionView.m; sourceTree = "<group>"; };
 		8BDA72861892122900612C5D /* ShowCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCollectionCell.h; sourceTree = "<group>"; };
@@ -70,6 +81,9 @@
 		8BE11D0D1890C58D00BBE7B1 /* ShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowCell.xib; sourceTree = "<group>"; };
 		8BE11D131890E1E500BBE7B1 /* CollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionFlowLayout.h; sourceTree = "<group>"; };
 		8BE11D141890E1E500BBE7B1 /* CollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionFlowLayout.m; sourceTree = "<group>"; };
+		8BFB52B3189FC069004696E2 /* PickAShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickAShowViewController.h; sourceTree = "<group>"; };
+		8BFB52B4189FC069004696E2 /* PickAShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickAShowViewController.m; sourceTree = "<group>"; };
+		8BFB52B5189FC069004696E2 /* PickAShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickAShowViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		8BE11CC51890BE9D00BBE7B1 = {
 			isa = PBXGroup;
 			children = (
+				8BFB52AD189FBFC7004696E2 /* Try2 */,
 				8BE11D091890BF2600BBE7B1 /* Guide */,
 				8BE11CD71890BE9D00BBE7B1 /* TVGuideDemo */,
 				8BE11CF61890BE9E00BBE7B1 /* TVGuideDemoTests */,
@@ -188,6 +203,22 @@
 			name = Guide;
 			sourceTree = "<group>";
 		};
+		8BFB52AD189FBFC7004696E2 /* Try2 */ = {
+			isa = PBXGroup;
+			children = (
+				8BFB52B3189FC069004696E2 /* PickAShowViewController.h */,
+				8BFB52B4189FC069004696E2 /* PickAShowViewController.m */,
+				8BFB52B5189FC069004696E2 /* PickAShowViewController.xib */,
+				8B627C9318A095FC00347A30 /* CustomLayout.h */,
+				8B627C9418A095FC00347A30 /* CustomLayout.m */,
+				8B627C9618A0AD3500347A30 /* CustomCell.h */,
+				8B627C9718A0AD3500347A30 /* CustomCell.m */,
+				8B627C9918A0D7C000347A30 /* CustomTableView.h */,
+				8B627C9A18A0D7C000347A30 /* CustomTableView.m */,
+			);
+			name = Try2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +298,7 @@
 			files = (
 				8BE11CEA1890BE9E00BBE7B1 /* Images.xcassets in Resources */,
 				8BE11CDC1890BE9E00BBE7B1 /* InfoPlist.strings in Resources */,
+				8BFB52B7189FC069004696E2 /* PickAShowViewController.xib in Resources */,
 				8BE11D0E1890C58D00BBE7B1 /* ShowCell.xib in Resources */,
 				8BE11CE51890BE9E00BBE7B1 /* Main.storyboard in Resources */,
 			);
@@ -289,11 +321,15 @@
 			files = (
 				8BDA72881892122900612C5D /* ShowCollectionCell.m in Sources */,
 				8BE11CDE1890BE9E00BBE7B1 /* main.m in Sources */,
+				8B627C9B18A0D7C000347A30 /* CustomTableView.m in Sources */,
+				8B627C9818A0AD3500347A30 /* CustomCell.m in Sources */,
 				8BE11D081890BF1900BBE7B1 /* TableContainerView.m in Sources */,
 				8B7D8BA4189636E3009670AD /* CustomCollectionView.m in Sources */,
 				8BE11CE81890BE9E00BBE7B1 /* PIViewController.m in Sources */,
 				8BE11D0C1890C4FC00BBE7B1 /* ShowCell.m in Sources */,
+				8B627C9518A095FC00347A30 /* CustomLayout.m in Sources */,
 				8BE11D151890E1E500BBE7B1 /* CollectionFlowLayout.m in Sources */,
+				8BFB52B6189FC069004696E2 /* PickAShowViewController.m in Sources */,
 				8BE11CE21890BE9E00BBE7B1 /* PIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

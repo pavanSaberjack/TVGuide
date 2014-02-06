@@ -11,6 +11,8 @@
 // Custom Views
 #import "TableContainerView.h"
 
+#import "PickAShowViewController.h"
+
 @interface PIViewController ()
 
 @end
@@ -21,7 +23,9 @@
 {
     [super viewDidLoad];
     
-    [self addTableContainerView];
+//    [self addTableContainerView];
+    
+    [self performSelector:@selector(shows) withObject:nil afterDelay:2.0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +35,14 @@
 }
 
 #pragma Private methods
+- (void)shows
+{
+    [self presentViewController:({
+        PickAShowViewController *pickShow = [[PickAShowViewController alloc] initWithNibName:@"PickAShowViewController" bundle:nil];
+        pickShow;
+    }) animated:YES completion:nil];
+}
+
 - (void)addTableContainerView
 {
     [self.view addSubview:({

@@ -51,7 +51,7 @@
                   symbolName = "-[TableContainerView showCell:collectionViewDidScroll:]"
                   moduleName = "TVGuideDemo"
                   urlString = "file:///Users/pavan/github/zing_files/TVGuideDemo/TableContainerView.m"
-                  timestampString = "412498974.331309"
+                  timestampString = "413271409.060666"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "91"
@@ -65,7 +65,7 @@
                   symbolName = "-[TableContainerView showCell:collectionViewDidScroll:]"
                   moduleName = "TVGuideDemo"
                   urlString = "file:///Users/pavan/github/zing_files/TVGuideDemo/TableContainerView.m"
-                  timestampString = "412498974.331823"
+                  timestampString = "413271409.061088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "91"
@@ -88,6 +88,22 @@
             startingLineNumber = "107"
             endingLineNumber = "107"
             landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PickAShowViewController.m"
+            timestampString = "413272478.185402"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "-scrollViewWillBeginDragging:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
